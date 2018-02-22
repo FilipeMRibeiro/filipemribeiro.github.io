@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link href="css\main.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", sans-serif}
 </style>
-<body class="w3-light-grey">
+<body class="w3-white">
   <!-- Nav Bar -->
   <div class="w3-row">
   <div class="w3-col w3-sidebar w3-left w3-top w3-margin-right" style="z-index:3;width:20%;background-image:url(cover.jpg); background-repeat: no-repeat; background-size: 500% 100%">
@@ -26,63 +27,86 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", sans-serif}
         <a href="#areas" class="w3-bar-item w3-button">Areas of Interest</a><br>
         <a href="#projects" class="w3-bar-item w3-button">Past Projects</a><br>
         <a href="#education" class="w3-bar-item w3-button">Education</a><br>
-        <!--
-        <a href="nooo.jpg" class="w3-bar-item w3-button" download>Download CV (pdf)</a><br>
-      -->
+        <a href="Filipe_Ribeiro_Resume.pdf" class="w3-bar-item w3-button" download>Download Resume (pdf)</a><br>
         <a href="#contacts" class="w3-bar-item w3-button">How to Contact Me</a><br>
     </div>
   </div>
   <!-- End of Nav Bar -->
 
 <!-- Page Container -->
-<div class="w3-rest w3-content w3-margin-right w3-margin-top" style="margin-left:21%;">
-
-      <div class="w3-container w3-card w3-white w3-text-grey" id="intro">
-          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-male fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Hello, World!</h2>
+<div class="w3-three w3-container  w3-margin-top" style="margin-left:20%;">
+      <div class="w3-container w3-text-grey w3-card" id="intro">
+          <h2 class="w3-padding-16"><i class="fa fa-male fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Hello, World!</h2>
           <p>My name is Filipe Ribeiro, and I am 24 years-old. I'm a portuguese soon-to-be Master in Informatics and Computing Engineering, and I currently study at FEUP (Faculty of Engineering of the University of Porto). I currently live in Ermesinde, a small city near Porto.</p>
           <p>I am a sports enthusiast and a musichead, but more than just a lover of these two arts, I am a practitioner as well. I enjoy running, playing football, playing guitar and singing.</p>
           <p>Some words I try to live by: "Happiness can be found, even in the darkest of times, if only one remembers to turn on the light."</p>
       </div>
 
-      <div class="w3-container w3-card w3-white w3-text-grey" id="areas">
+      <div class="w3-container w3-text-grey w3-white w3-card" id="areas">
           <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Areas of Interest</h2>
           <div class="w3-container">
             <h5><b>Artificial Intelligence</b></h5>
+            <ul>
+              <li><h6>Natural Language Processing</h6></li>
+              <li><h6>Robotics</h6></li>
+            </ul>
           </div>
           <div class="w3-container">
             <h5><b>Information Systems</b></h5>
+            <ul>
+              <li><h6>Data Modelling</h6></li>
+              <li><h6>File and Database Management</h6></li>
+            </ul>
           </div>
           <div class="w3-container">
             <h5><b>Mathematics</b></h5>
-          </div>
-          <div class="w3-container">
-            <h5><b>Physics</b></h5>
+            <ul>
+              <li><h6>Algebra</h6></li>
+              <li><h6>Statistics</h6></li>
+            </ul>
           </div>
       </div>
 
-      <div class="w3-container w3-card w3-white" id="projects">
+      <div class="w3-container w3-white w3-card" id="projects">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Past Projects</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>??? Developer / FEUP - Project Management / ITSector</b></h5>
+          <h5 class="w3-opacity"><b>ITS Talent – Aplicant Tracking System Recruiting & Sourcing Software</b></h5>
           <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2018 - <span class="w3-tag w3-indigo w3-round">Current</span></h6>
-          <p>Applicant Tracking System </p>
+          <p>Project being done in the Project Management course at FEUP for the company ITSector, a Software Development enterprise created to provide the IT market with added value solutions.<br>Applicant Tracking System to optimize ITSector's recruitment and selection processes.<br></p>
+          <div class="w3-container w3-margin-bottom">
+            <span class="w3-margin-right language">ASP NET Core</span>
+            <span class="w3-margin-right language">C# </span>
+            <span class="w3-margin-right tool">Angular 5</span>
+            <span class="w3-margin-right tool">AZURE</span>
+            <span class="w3-margin-right tool">Bootstrap 4</span>
+          </div>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Application Developer / Traffic Signals Recognition Using Conde Simulator</b></h5>
+          <h5 class="w3-opacity"><b>Traffic Signals Recognition Using Conde Simulator</b></h5>
           <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2017 - Jan 2018</h6>
           <p>A project done for the Robotics Course at FEUP, which aimed at developing an autonomous robot with the ability to recognize traffic signals and react accordingly.</p>
+          <div class="w3-container w3-margin-bottom">
+            <span class="w3-margin-right language">C++</span>
+            <span class="w3-margin-right tool">ROS</span>
+            <span class="w3-margin-right tool">Conde Simulator</span>
+          </div>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Application Developer / Energetic Efficiency in Wireless Sensors Networks</b></h5>
           <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2015 - Dec 2015</h6>
-          <p>Application made for the Agents and Distributed Artificial Intelligence Course at FEUP. </p><br>
+          <p>Application made for the Agents and Distributed Artificial Intelligence Course at FEUP.<br>Implementation and analysis of the experimental results of a coalition-forming algorithm.</p>
+          <div class="w3-container w3-margin-bottom">
+            <span class="w3-margin-right language">JADE</span>
+            <span class="w3-margin-right tool">REPAST 3</span>
+            <span class="w3-margin-right tool">SAJaS</span>
+          </div>
         </div>
       </div>
 
-      <div class="w3-container w3-card w3-white " id="education">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Education</h2>
+      <div class="w3-container w3-white w3-card" id="education">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Faculty of Engineering of the University of Porto</b></h5>
           <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2011 - <span class="w3-tag w3-indigo w3-round">Current</span></h6>

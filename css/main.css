@@ -1,0 +1,20 @@
+.tool{
+  display:inline-block;
+  font-family:Ubuntu,monospace;
+  font-weight:500;
+  padding:2px 7px;
+  border-radius:3px;
+  color:#000066;
+  border:1px solid dodgerblue;
+  background: 0 0}
+
+.language{
+  display:inline-block;
+  font-family:Ubuntu,monospace;
+  font-weight:500;
+  padding:2px 7px;
+  border-radius:3px;
+  color:#000066;
+  border:1px solid hotpink;
+  background: 0 0
+}
