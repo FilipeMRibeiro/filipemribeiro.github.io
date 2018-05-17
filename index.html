@@ -12,9 +12,9 @@
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", sans-serif}
 </style>
 <body class="w3-white">
+
   <!-- Nav Bar -->
-  <div class="w3-row">
-  <div class="w3-col w3-sidebar w3-left w3-top w3-margin-right" style="z-index:3;width:20%;background-image:url(./images/cover.jpg); background-repeat: no-repeat; background-size: 500% 100%">
+  <div class="w3-col w3-sidebar w3-top w3-margin-right" id="sidebar" style="z-index:3;width:20%;background-image:url(./images/cover.jpg); background-repeat: no-repeat; background-size: 500% 100%">
     <div class="w3-container w3-padding-16">
       <img src="./images/avatar.jpg" class="w3-image" style="width:75%; height:50%" alt="Avatar">
       <h2 class="w3-wide w3-text-light-grey"><b>FILIPE RIBEIRO</b></h2>
@@ -29,10 +29,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", sans-serif}
         <a href="#contacts" class="w3-bar-item w3-button">How to Contact Me</a><br>
     </div>
   </div>
+
+  <div class="w3-sidebar w3-top w3-bar-block w3-black" id="mobile-sidebar" style="width:70px; align-content: center">
+  <a href="#intro" class="w3-bar-item w3-button w3-margin-top"><img src="./images/avatar.jpg" class="w3-circle w3-image w3-tiny"></i></a>
+  <a href="#areas" class="w3-bar-item w3-button w3-margin-top"><i class="fa fa-search w3-xxlarge"></i></a>
+  <a href="#projects" class="w3-bar-item w3-button w3-margin-top"><i class="fa fa-code w3-xxlarge"></i></a>
+  <a href="#education" class="w3-bar-item w3-button w3-margin-top"><i class="fa fa-book w3-xxlarge"></i></a>
+  <a href="#contacts" class="w3-bar-item w3-button w3-margin-top"><i class="fa fa-globe w3-xxlarge"></i></a>
+  <a href="./docs/Filipe_Ribeiro_Resume.pdf" class="w3-bar-item w3-button w3-xxlarge" download><i class="fa fa-download"></i></a>
+</div>
   <!-- End of Nav Bar -->
 
 <!-- Page Container -->
-<div class="w3-margin-top" style="margin-left:20%">
+<div class="w3-margin-top" id="body" style="margin-left:20%">
       <div class="w3-container w3-text-grey " id="intro">
           <h2 class="w3-padding-16"><i class="fa fa-male fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Hello, World!</h2>
           <p>My name is Filipe Ribeiro, and I am a 24 year-old, portuguese, soon-to-be Master in Informatics and Computing Engineering currently studying at FEUP (Faculty of Engineering of the University of Porto). I live in Ermesinde, a small city near Porto.</p>
@@ -129,7 +138,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", sans-serif}
         </div>
       </div>
   <!-- End Page Container -->
-</div>
+
 </div>
 
 <footer class="w3-container w3-indigo w3-center" style="margin-left:20%" id="contacts">
@@ -144,6 +153,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Ubuntu", sans-serif}
   <a href="https://www.linkedin.com/in/filipe-ml-ribeiro/"><i class="fa fa-linkedin w3-xlarge w3-hover-opacity"></i></a>
   <p></p>
 </footer>
+
+<script type="text/javascript">
+   var mobile = (/iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
+   if (mobile) {
+       document.getElementById("sidebar").style.display = 'none';
+       document.getElementById("body").style.marginLeft = "70px";
+       document.getElementById("contacts").style.marginLeft = "70px";
+   }
+   else
+   {
+      document.getElementById("mobile-sidebar").style.display = 'none';
+   }
+</script>
 
 </body>
 </html>
