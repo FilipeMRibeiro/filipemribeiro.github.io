@@ -1,0 +1,78 @@
+{
+  "params": [
+    {
+        "name": "objectPropertiesSparsing"
+    },
+    {
+        "name": "variableMasking"
+    },
+    {
+        "name": "whitespaceRemoval"
+    },
+    {
+        "name": "identifiersRenaming",
+        "options": {
+            "mode": "SAFEST"
+        }
+    },
+    {
+        "name": "globalVariableIndirection"
+    },
+    {
+        "name": "dotToBracketNotation"
+    },
+    {
+        "name": "stringConcealing"
+    },
+    {
+        "name": "functionReordering"
+    },
+    {
+        "options": {
+            "freq": 1,
+            "features": [
+                "opaqueFunctions"
+            ]
+        },
+        "name": "functionOutlining"
+    },
+    {
+        "name": "propertyKeysObfuscation",
+        "options": {
+            "encoding": [
+                "hexadecimal"
+            ]
+        }
+    },
+    {
+        "name": "regexObfuscation"
+    },
+    {
+        "name": "booleanToAnything"
+    }
+  ],
+  "areSubscribersOrdered": false,
+  "useRecommendedOrder": true,
+  "jscramblerVersion": "8.0",
+  "tolerateMinification": true,
+  "profilingDataMode": "off",
+  "useAppClassification": false,
+  "browsers": {},
+  "languageSpecifications": {
+    "es5": true,
+    "es6": false,
+    "es7": false
+  },
+  "protocol": "https",
+  "filesSrc": ["src/**"],
+  "filesDest": "dist/",
+  "applicationTypes": {
+    "webBrowserApp": true,
+    "desktopApp": false,
+    "serverApp": false,
+    "hybridMobileApp": false,
+    "javascriptNativeApp": false,
+    "html5GameApp": false
+  },
+  "debugMode": false
+}
